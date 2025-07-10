@@ -1,43 +1,64 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #fca7ff ;
-    --cor-secundaria: #6b72a6; 
-    --cor-destaque: #fd2bd6;
-    --cor-texto: #D7F9FF;
-
+:root {
+  --cor-fundo: #0d1117;
+  --cor-principal: #161b22;
+  --cor-secundaria: #ae58ff;
+  --cor-destaque: #f778ba;
+  --cor-texto: #c9d1d9;
 }
 
 body {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
 }
 
-.caixa-principal{
-    background-color: var(--cor-principal);
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-    padding: 20px;
+.caixa-principal {
+  background-color: var(--cor-principal);
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-h1{
-    color: var(--cor-destaque);
+h1 {
+  color: var(--cor-destaque);
+  margin-bottom: 25px;
 }
 
-button {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
-    border: none;
-    border-radius: 15px;
-    padding: 15px;
-    transition: background-color 0.3s;
+.caixa-perguntas {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
-button:hover{
-    background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+.caixa-alternativas button {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 5px;
+  width: 100%;
+  max-width: 90%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+  transform: scale(1.03);
+}
+
+.texto-resultado {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
